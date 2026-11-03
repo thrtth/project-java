@@ -13,7 +13,7 @@ public class SearchTests {
     }
 
     @Test
-    void successfulSearchDuckDuck() {
+    void successfulSearch() {
         open("https://duckduckgo.com/");
         $("[aria-label='Search with DuckDuckGo']").setValue("qa.guru").pressEnter();
         $("[data-area='mainline']").shouldHave(text("QA.GURU"));
